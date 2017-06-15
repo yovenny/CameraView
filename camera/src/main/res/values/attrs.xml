@@ -5,7 +5,7 @@
     <attr name="iconSrc" format="reference"/>
     <attr name="duration_max" format="integer"/>
     <attr name="captureAppend" format="dimension"/>
-    <attr name="isCoverCapture" format="boolean"/>
+    <attr name="isExpandCapture" format="boolean"/>
     <attr name="tipTopMargin" format="dimension"/>
     <declare-styleable name="JCameraView">
         <attr name="iconSize"/>
@@ -13,7 +13,7 @@
         <attr name="iconSrc"/>
         <attr name="duration_max"/>
         <attr name="captureAppend"/>
-        <attr name="isCoverCapture"/>
+        <attr name="isExpandCapture"/>
         <attr name="tipTopMargin"/>
     </declare-styleable>
 </resources>

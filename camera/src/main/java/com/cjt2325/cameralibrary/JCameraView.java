@@ -130,7 +130,7 @@ public class JCameraView extends FrameLayout implements CameraInterface.CamOpenO
                 TypedValue.COMPLEX_UNIT_SP, 15, getResources().getDisplayMetrics()));
         iconSrc = a.getResourceId(R.styleable.JCameraView_iconSrc, R.drawable.ic_sync_black_24dp);
         duration = a.getInteger(R.styleable.JCameraView_duration_max, 10 * 1000);
-        isExpandCapture =a.getBoolean(R.styleable.JCameraView_isCoverCapture, false);
+        isExpandCapture =a.getBoolean(R.styleable.JCameraView_isExpandCapture, false);
 
         int captureAppend = a.getDimensionPixelSize(R.styleable.JCameraView_captureAppend, (int) TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_SP, 80, getResources().getDisplayMetrics()));
@@ -582,10 +582,10 @@ public class JCameraView extends FrameLayout implements CameraInterface.CamOpenO
                     }
                 }
                 mCaptureLayout.isRecord(false);
-                LayoutParams videoViewParam = new LayoutParams(LayoutParams.MATCH_PARENT,
-                        LayoutParams.MATCH_PARENT);
+//                LayoutParams videoViewParam = new LayoutParams(LayoutParams.MATCH_PARENT,
+//                        LayoutParams.MATCH_PARENT);
 //                videoViewParam.addRule(RelativeLayout.CENTER_IN_PARENT, RelativeLayout.TRUE);
-                mVideoView.setLayoutParams(videoViewParam);
+//                mVideoView.setLayoutParams(videoViewParam);
                 CameraInterface.getInstance().doOpenCamera(JCameraView.this);
                 break;
         }
